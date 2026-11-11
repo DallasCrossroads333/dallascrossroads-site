@@ -1,5 +1,5 @@
 {
-  "form_endpoint": "",
+  "form_endpoint": "https://formspree.io/f/xgakeayp",
   "phone_1": "(214) 662-0168",
   "phone_2": "(945) 388-0965",
   "email_1": "dallascrossroads@gmail.com",
@@ -9,7 +9,7 @@
   "hero_line1": "Building Paths.",
   "hero_line2": "Creating Opportunities.",
   "hero_text": "Miguel Escandon, owner. New builds, remodels, electrical, plumbing, framing and flooring — plus locksmith and moving crews under the same roof. Licensed, insured, and answering the phone at 2 a.m.",
-  "portrait": "/images/portrait.jpg",
+  "portrait": "/portrait.jpg",
   "services": [
     {"name": "New Builds", "description": "Ground-up construction, start to keys."},
     {"name": "Remodels", "description": "Kitchens, baths, whole-home transformations."},
@@ -23,7 +23,7 @@
   ],
   "work_intro": "Landscape lighting, Del Norte — low-voltage spots and uplights, transformer, wire runs and staking.",
   "gallery": [
-    {"photo": "/images/work-1.jpg", "title": "Del Norte · entry & elevation", "caption": "spots set to graze the stucco, warm wash on the wood entry."},
-    {"photo": "/images/work-2.jpg", "title": "Del Norte · tree uplighting", "caption": "canopy uplights at the oaks, full street presence after dark."}
+    {"photo": "/work-1.jpg", "title": "Del Norte · entry & elevation", "caption": "spots set to graze the stucco, warm wash on the wood entry."},
+    {"photo": "/work-2.jpg", "title": "Del Norte · tree uplighting", "caption": "canopy uplights at the oaks, full street presence after dark."}
   ]
 }
