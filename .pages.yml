@@ -5,7 +5,7 @@ content:
   - name: site
     label: Website Content
     type: file
-    path: content/site.json
+    path: site.json
     format: json
     fields:
       - { name: phone_1, label: "Phone 1 (call + text)", type: string }
