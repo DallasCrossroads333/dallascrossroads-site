@@ -2,7 +2,7 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/images/logo.png">
+<link rel="icon" href="/logo.png">
 <title>Dallas Crossroads LLC — Building Paths. Creating Opportunities.</title>
 <style>
   :root{
@@ -149,7 +149,7 @@
 
 <header class="site">
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="/images/logo.png" alt="Dallas Crossroads LLC"></a>
+    <a class="brand" href="#top"><img src="/logo.png" alt="Dallas Crossroads LLC"></a>
     <nav class="links">
       <a href="#divisions">Divisions</a>
       <a href="#services">Services</a>
@@ -189,7 +189,7 @@
         </div>
       </div>
       <figure class="portrait" style="margin:0">
-        <img id="portrait" src="/images/portrait.jpg" alt="Miguel Escandon, owner of Dallas Crossroads LLC, with the Dallas skyline behind him">
+        <img id="portrait" src="/portrait.jpg" alt="Miguel Escandon, owner of Dallas Crossroads LLC, with the Dallas skyline behind him">
         <figcaption>Miguel Escandon &#183; Owner</figcaption>
       </figure>
     </div>
@@ -204,21 +204,21 @@
       </div>
       <div class="divs">
         <article class="divcard build">
-          <div class="logo" style="background-image:url('/images/div-construction.png')" role="img" aria-label="Dallas Crossroads Construction"></div>
+          <div class="logo" style="background-image:url('/div-construction.png')" role="img" aria-label="Dallas Crossroads Construction"></div>
           <h3>Construction</h3>
           <p>dba Texas Crossroads Construction. Ground-up builds, full remodels, and everything that needs a permit.</p>
           <ul><li>New builds &amp; additions</li><li>Kitchen &amp; bath remodels</li><li>Electrical &amp; plumbing</li><li>Framing &amp; flooring</li></ul>
           <a class="btn ghost" href="#estimate">Get a Number</a>
         </article>
         <article class="divcard secure">
-          <div class="logo" style="background-image:url('/images/div-keymasters.png')" role="img" aria-label="Dallas Crossroads Keymasters"></div>
+          <div class="logo" style="background-image:url('/div-keymasters.png')" role="img" aria-label="Dallas Crossroads Keymasters"></div>
           <h3>Keymasters</h3>
           <p>Lock &amp; security specialists. Locked out at midnight or re-keying a whole building &#8212; same-day either way.</p>
           <ul><li>Lockout response</li><li>Rekeys &amp; new hardware</li><li>Master key systems</li><li>Commercial door hardware</li></ul>
           <a class="btn ghost" href="#estimate">Get a Number</a>
         </article>
         <article class="divcard move">
-          <div class="logo" style="background-image:url('/images/div-moving.png')" role="img" aria-label="Dallas Crossroads Hauling and Moving"></div>
+          <div class="logo" style="background-image:url('/div-moving.png')" role="img" aria-label="Dallas Crossroads Hauling and Moving"></div>
           <h3>Hauling &amp; Moving</h3>
           <p>Reliable &#183; professional &#183; service. One sofa or a whole household, packed and set down right.</p>
           <ul><li>Local &amp; long-distance moves</li><li>Full-service packing</li><li>Furniture &amp; appliances</li><li>Load / unload labor</li></ul>
@@ -257,11 +257,11 @@
       </div>
       <div class="work" id="work-grid">
         <figure class="shot" style="margin:0">
-          <img src="/images/work-1.jpg" alt="Front elevation at dusk with low-voltage uplighting washing the stucco and entry">
+          <img src="/work-1.jpg" alt="Front elevation at dusk with low-voltage uplighting washing the stucco and entry">
           <figcaption><b>Del Norte &#183; entry &amp; elevation</b> &#8212; spots set to graze the stucco, warm wash on the wood entry.</figcaption>
         </figure>
         <figure class="shot" style="margin:0">
-          <img src="/images/work-2.jpg" alt="Street view at dusk with trees uplit and the entry glowing">
+          <img src="/work-2.jpg" alt="Street view at dusk with trees uplit and the entry glowing">
           <figcaption><b>Del Norte &#183; tree uplighting</b> &#8212; canopy uplights at the oaks, full street presence after dark.</figcaption>
         </figure>
       </div>
@@ -416,7 +416,7 @@
   btns.forEach(function(b){b.addEventListener('click',function(){setLane(b.dataset.lane);});});
   document.addEventListener('input',calc);
 
-  var FORM='';  /* filled from content/site.json */
+  var FORM='https://formspree.io/f/xgakeayp';  /* filled from site.json */
   function mailto(subject,body){
     return 'mailto:'+EMAILS.split(',')[0]+'?cc='+EMAILS.split(',')[1]+'&subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
   }
@@ -446,11 +446,11 @@
     send(d,'Free Estimate Request — '+v('r-name'),st,this,'Request sent! We’ll get right back to you.');
   });
 
-  /* ---------- editable content (content/site.json, edited in Pages CMS) ---------- */
+  /* ---------- editable content (site.json, edited in Pages CMS) ---------- */
   function esc(x){return String(x==null?'':x).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function digits(p){var d=String(p||'').replace(/\D/g,'');if(d.length===10)d='1'+d;return '+'+d;}
   function fmt(p){var d=String(p||'').replace(/\D/g,'').slice(-10);return d.length===10?'('+d.slice(0,3)+') '+d.slice(3,6)+'-'+d.slice(6):p;}
-  fetch('/content/site.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).then(function(c){
+  fetch('/site.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).then(function(c){
     if(!c)return;
     if(c.form_endpoint)FORM=c.form_endpoint;
     [['1',c.phone_1],['2',c.phone_2]].forEach(function(x){if(!x[1])return;
