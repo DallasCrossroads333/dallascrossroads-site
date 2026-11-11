@@ -1,0 +1,29 @@
+{
+  "form_endpoint": "",
+  "phone_1": "(214) 662-0168",
+  "phone_2": "(945) 388-0965",
+  "email_1": "dallascrossroads@gmail.com",
+  "email_2": "miguelangel@dallascrossroads.com",
+  "hours": "Mon–Sat 7a–7p · 24/7 emergency",
+  "service_area": "Dallas–Fort Worth metro",
+  "hero_line1": "Building Paths.",
+  "hero_line2": "Creating Opportunities.",
+  "hero_text": "Miguel Escandon, owner. New builds, remodels, electrical, plumbing, framing and flooring — plus locksmith and moving crews under the same roof. Licensed, insured, and answering the phone at 2 a.m.",
+  "portrait": "/images/portrait.jpg",
+  "services": [
+    {"name": "New Builds", "description": "Ground-up construction, start to keys."},
+    {"name": "Remodels", "description": "Kitchens, baths, whole-home transformations."},
+    {"name": "Electrical", "description": "Panels, wiring, fixtures, code corrections."},
+    {"name": "Plumbing", "description": "Rough-in, fixtures, leaks and repairs."},
+    {"name": "Framing", "description": "Structural framing built to code."},
+    {"name": "Flooring", "description": "Hardwood, tile, LVP, laminate."},
+    {"name": "Landscape Lighting", "description": "Low-voltage design, install and wiring."},
+    {"name": "Doors & Trim", "description": "Strip, stain, seal, handlesets, caulking."},
+    {"name": "Emergency Repairs", "description": "24/7 — storm, water, break-in damage."}
+  ],
+  "work_intro": "Landscape lighting, Del Norte — low-voltage spots and uplights, transformer, wire runs and staking.",
+  "gallery": [
+    {"photo": "/images/work-1.jpg", "title": "Del Norte · entry & elevation", "caption": "spots set to graze the stucco, warm wash on the wood entry."},
+    {"photo": "/images/work-2.jpg", "title": "Del Norte · tree uplighting", "caption": "canopy uplights at the oaks, full street presence after dark."}
+  ]
+}

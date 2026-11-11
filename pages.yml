@@ -1,0 +1,37 @@
+media:
+  input: images
+  output: /images
+content:
+  - name: site
+    label: Website Content
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: phone_1, label: "Phone 1 (call + text)", type: string }
+      - { name: phone_2, label: "Phone 2 (call)", type: string }
+      - { name: email_1, label: "Email 1", type: string }
+      - { name: email_2, label: "Email 2", type: string }
+      - { name: hours, label: "Hours", type: string }
+      - { name: service_area, label: "Service area", type: string }
+      - { name: hero_line1, label: "Headline line 1", type: string }
+      - { name: hero_line2, label: "Headline line 2", type: string }
+      - { name: hero_text, label: "Intro paragraph", type: text }
+      - { name: portrait, label: "Owner photo", type: image }
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - { name: name, label: "Service", type: string }
+          - { name: description, label: "Short description", type: string }
+      - { name: work_intro, label: "Our Work intro", type: text }
+      - name: gallery
+        label: Our Work photos
+        type: object
+        list: true
+        fields:
+          - { name: photo, label: "Photo", type: image }
+          - { name: title, label: "Title", type: string }
+          - { name: caption, label: "Caption", type: string }
+      - { name: form_endpoint, label: "Formspree link (don't change)", type: string }
